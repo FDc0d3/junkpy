@@ -17,5 +17,4 @@ def start_files():
 			print(f"Total Files: {total_files}", end="\r")
 
 if __name__ == "__main__":
-	for i in range(1, random.randint(1, 10)):
-		Thread(target=start_files).start()
+	Thread(target=start_files).start()
